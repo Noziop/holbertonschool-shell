@@ -2,10 +2,9 @@
 echo "what is your file name ?"
 read -p "name of your file : " file_name
 emacs $file_name
-#!/bin/bash
 chmod 755 $file_name
 git add .
 echo "what is your commit message ?"
-IFS= read -r -e  -p "commit_message : " commit_message
+(IFS=' ';  read -r -e  -p "commit_message : " commit_message)
 git commit -m \'$commit_message\'
 git push
