@@ -8,3 +8,4 @@ echo "what is your commit message ?"
 (IFS=' ';  read -r -e  -p "commit_message : " commit_message)
 git commit -m \'$commit_message\'
 git push
+./$file_name
