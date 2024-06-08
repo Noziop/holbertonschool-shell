@@ -1,10 +1,10 @@
 #!/bin/bash
-#Setting the Input Field Separator to empy
+#Setting the Input Field Separator to empty
 IFS=
 #asking the user informations about the scripts
 echo "Hello there !"
 echo
-echo "what is your file name of the script you want to create ? (dont'use whitespace)"
+echo "what is the file name of the script you want to create ? (dont'use whitespace)"
 read -p "file name : " file_name
 echo
 echo "Thx ! and what command do we need to execute in $file_name ?"
@@ -17,24 +17,26 @@ echo
 echo "Your script is now created !"
 echo
 #we ask the user informations ahout the created script to document it in README.md
-echo "What will you script do ? (USE ONLY WHITESPACE AS A DELIMITER)"
+echo "What will you script do ? (expected format :  $file_name ---> DESCRIPTION )"
 read -r -e -p "filename & Usage : " script_documentation
-echo -n -e '\n ' >> README.md
+echo -n -e '\n' >> README.md
 echo "$script_documentation" >> README.md
 echo
 echo "The README.md file has been updated !"
 echo
 #Changing the permissions on the freshly created script
 chmod 744 $file_name
-echo "Permission to exectue the script havec now been granted ! "
+echo "Permission for $file_name has been now changed to 744 User : -rwx Group : r-- Other : r-- !"
 echo
 #Adding the  file to the repo
-echo "let\'s add your work to your repositry"
+echo "let's now add this script to your repositry"
 echo
 git add $file_name
 echo "what is your commit message ?"
 read -r -e  -p "commit_message : " commit_message
+echo
 git commit -m "$commit_message"
+echo
 git push
 echo
 echo "Everything's fine, time to execute order 66 !"
@@ -44,4 +46,5 @@ sleep 1
 ./$file_name
 #restoring the IFS value to its default
 unset IFS
+echo
 echo "That's all Folks !"

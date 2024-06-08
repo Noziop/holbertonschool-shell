@@ -28,10 +28,3 @@ building_script ---> This script helps the user to create the scripts asked in t
 10-back ---> this script goes back to the previous directory
 
 11-lists ---> this script lists several directory : working, it_s parent, and /boot
-
-testing ---> just another test
-testagain ---> still testing here
- 
-adjusting ---> test to see how building_scripts handle the README.md
-
- adjusting ---> just another test
