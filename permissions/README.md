@@ -17,3 +17,12 @@ FS=
 
 3-new_owner --->  script that changes the owner
 
+
+test
+
+
+4-empty ---> script that's create an empty file
+
+
+5-execute ---> changes permission for a specific file
+

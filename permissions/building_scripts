@@ -4,13 +4,33 @@ IFS=
 #asking the user informations about the scripts
 echo "Hello there !"
 echo
-echo "what is the file name of the script you want to create ? (dont'use whitespace)"
+read -p "do you need to create a file for you excercise ? Y or N : " -n 1 -r secondary_file_creation
 echo
-read -p "the file's name is : " file_name
+if [[ $secondary_file_creation =~ ^[Yy]$ ]]
+then
+	read -r -e -p "please type the name of the file you need to create : " secondary_file_name
+	echo
+	read -p "does your file need to be stored somewhere else ? Y or N : " -n 1 -r secondary_file_storage
+	if [[ $secondary_file_storage =~ ^[Yy]$ ]]
+	then
+		read -r -e -p "please type the ABSOLUTE path for your file : " secondary_file_path
+		touch $secondary_file_name $secondary_file_path
+	fi
+	if [[ ! $secondary_file_storage =~ ^[Yy]$ ]]
+	then
+		echo
+		echo "let's create the file in this directory"
+		touch $secondary_file_name
+	fi
+fi
+if [[ ! $secondary_file_creation =~ ^[Yy]$ ]]
+then
+	echo "ok then, let's push things forward..."
+	echo
+fi
+read -p "what is the file name of the script you want to create ? (don't use whitespace) : " file_name
 echo
-echo "Thx ! and what command do we need to execute in $file_name ?"
-echo
-read -r -e -p "type the command you need : " command_line
+read -r -e -p "Thx ! now, type the command we need to execute in $file_name : " command_line
 #we create the file with the shebang first  and add the command
 echo '#!/bin/bash' > $file_name
 echo "$command_line" >> $file_name
@@ -18,7 +38,7 @@ echo
 echo "Your script is now created !"
 echo
 #asking if the script needs to be copied somewhere else
-read -p "do you need a copy of this script somewhere else ? Y or N" -n 1 -r copy_reply
+read -p "do you need a copy of this script somewhere else ? Y or N : " -n 1 -r copy_reply
 echo
 if [[ $copy_reply =~ ^[Yy]$ ]]
 then
@@ -34,6 +54,8 @@ then
 fi
 echo
 #we ask the user informations ahout the created script to document it in README.md
+echo "Please Documentation is important, consider to fill the next part as if you don't know what all this was about"
+echo
 echo "What will your script do ? (expected format :  $file_name ---> DESCRIPTION )"
 read -r -e -p "filename & Usage : " script_documentation
 echo -n -e '\n' >> README.md
@@ -43,6 +65,7 @@ echo
 echo "The README.md file has been updated !"
 echo
 #Changing the permissions on the freshly created script
+echo "what specific permissions do you want to apply to this script ?"
 chmod 744 $file_name
 echo "Permission for $file_name has been now changed to 744 ! ( User : -rwx ; Group : r-- ; Other : r--  )"
 echo
