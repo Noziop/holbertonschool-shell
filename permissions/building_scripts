@@ -39,7 +39,7 @@ git commit -m "$commit_message"
 echo
 git push
 echo
-echo "Everything's fine, time to execute $command_line !"
+echo "Everything seems fine, it's time to execute the $command_line command you've put in $file_name :"
 echo
 #execution of the freshly created script
 ./$file_name
@@ -47,4 +47,4 @@ echo
 unset IFS
 #Congratulating the user ! all tasks are now completed
 echo
-echo "Awsome ! we're done here, you did an amazing job today !"
+echo "Awsome ! we're done here, you can now review your code on holberton's intrant. You sure did an amazing job today !"
