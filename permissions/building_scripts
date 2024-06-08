@@ -24,8 +24,9 @@ if [[ $copy_reply =~ ^[Yy]$ ]]
 then
 	echo "please type the ABSOLUTE path ! (starting from /)"
 	echo
-	read -r  -e -p "where do we copy this scrupt ? : " copy_path
+	read -r  -e -p "where do we copy this script ? : " copy_path
 	mkdir $copy_path
+	cp $file_name /tmp
 fi
 if [[ ! $copy_reply =~ ^[Yy]$ ]]
 then
