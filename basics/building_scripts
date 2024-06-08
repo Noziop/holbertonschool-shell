@@ -19,6 +19,7 @@ echo
 #we ask the user informations ahout the created script to document it in README.md
 echo "What will you script do ? (USE ONLY WHITESPACE AS A DELIMITER)"
 read -r -e -p "filename & Usage : " script_documentation
+echo -n -e '\n ' >> README.md
 echo "$script_documentation" >> README.md
 echo
 echo "The README.md file has been updated !"
