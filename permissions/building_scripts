@@ -13,6 +13,7 @@ read -r -e -p "Command to add : " command_line
 #we create the file with the shebang first  and add the command
 echo '#!/bin/bash' > $file_name
 echo "$command_line" >> $file_name
+echo -n -e '\n' >> $file_name
 echo
 echo "Your script is now created !"
 echo
@@ -21,6 +22,7 @@ echo "What will your script do ? (expected format :  $file_name ---> DESCRIPTION
 read -r -e -p "filename & Usage : " script_documentation
 echo -n -e '\n' >> README.md
 echo "$script_documentation" >> README.md
+echo -n -e '\n' >> README.md
 echo
 echo "The README.md file has been updated !"
 echo
