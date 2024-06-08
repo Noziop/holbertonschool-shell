@@ -30,3 +30,13 @@ building_script ---> This script prompt the user for filename, then ask the comm
 11-lists ---> this script lists several directory : working, it_s parent, and /boot
 
 12-file_type ---> look what type of file, a file is
+
+13-symbolic_link ---> this script create a symbolic link of an existing command, soft link
+
+14-copy_html ---> copy all HTML files from the current dir to the parent dir, only if they don't exist or if they are newer
+
+15-lets_move ---> Moves file starting with an uppercase
+
+16-clean_emacs ---> script that cleans all emacs files
+
+17-tree ---> creating a dir, in a dir, in a dir
