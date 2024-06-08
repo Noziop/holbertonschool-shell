@@ -28,3 +28,5 @@ building_script ---> This script prompt the user for filename, then ask the comm
 10-back ---> this script goes back to the previous directory
 
 11-lists ---> this script lists several directory : working, it_s parent, and /boot
+
+12-file_type ---> look what type of file, a file is
