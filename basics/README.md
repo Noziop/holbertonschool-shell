@@ -1,7 +1,7 @@
 #This is a documentation of the scripts and their purpose
 #BUILDING_SCRIPTS (WORK IN PROGRESS!)
 
-building_script ---> This script helps the user to create the scripts asked in the 1st project of 2nd week in holberton school and automatically add a line to README.md, then add/commit/push to git, and finally execute the script
+building_script ---> This script prompt the user for filename, then ask the command to put in the scripts as  asked in the 1st project of 2nd week in holberton school and automatically add a line to README.md to document the scripts, then add/commit/push to git, and finally execute the script
 
 ### Excercises from Holberton School
 

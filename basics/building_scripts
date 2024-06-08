@@ -17,7 +17,7 @@ echo
 echo "Your script is now created !"
 echo
 #we ask the user informations ahout the created script to document it in README.md
-echo "What will you script do ? (expected format :  $file_name ---> DESCRIPTION )"
+echo "What will your script do ? (expected format :  $file_name ---> DESCRIPTION )"
 read -r -e -p "filename & Usage : " script_documentation
 echo -n -e '\n' >> README.md
 echo "$script_documentation" >> README.md
@@ -26,7 +26,7 @@ echo "The README.md file has been updated !"
 echo
 #Changing the permissions on the freshly created script
 chmod 744 $file_name
-echo "Permission for $file_name has been now changed to 744 User : -rwx Group : r-- Other : r-- !"
+echo "Permission for $file_name has been now changed to 744 ! ( User : -rwx ; Group : r-- ; Other : r--  )"
 echo
 #Adding the  file to the repo
 echo "let's now add this script to your repositry"
@@ -39,12 +39,12 @@ git commit -m "$commit_message"
 echo
 git push
 echo
-echo "Everything's fine, time to execute order 66 !"
+echo "Everything's fine, time to execute $command_line !"
 echo
-sleep 1
 #execution of the freshly created script
 ./$file_name
 #restoring the IFS value to its default
 unset IFS
+#Congratulating the user ! all tasks are now completed
 echo
-echo "That's all Folks !"
+echo "Awsome ! we're done here, you did an amazing job today !"
