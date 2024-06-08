@@ -26,3 +26,12 @@ test
 
 5-execute ---> changes permission for a specific file
 
+
+7-everybody ---> everybody says hello : granting rwx to ugo
+
+
+ 7-everybody ---> everybody says hello : granting rwx to ugo
+
+
+7-everybody ---> everybody says hello : granting rwx to ugo
+
