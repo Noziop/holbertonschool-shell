@@ -1,2 +1,2 @@
 #!/bin/bash
-file adjusting
+cat README.md
