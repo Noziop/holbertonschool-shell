@@ -30,3 +30,4 @@ building_script ---> This script helps the user to create the scripts asked in t
 11-lists ---> this script lists several directory : working, it_s parent, and /boot
 
 testing ---> just another test
+testagain ---> still testing here

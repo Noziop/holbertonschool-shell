@@ -1,13 +1,14 @@
 #!/bin/bash
 #asking the user informations about the scripts
+IFS=
 echo "Hello there !"
 echo
-echo "what is your file name ? (dont'use whitespace)"
+echo "what is your file name of the script you want to create ? (dont'use whitespace)"
 read -p "file name : " file_name
 echo
-echo "Thx ! and what command do we need to execute in $filename ?"
+echo "Thx ! and what command do we need to execute in $file_name ?"
 echo
-IFS= ; read -r -e -p "Command to add : " command_line
+read -r -e -p "Command to add : " command_line
 #we create the file with the shebang first  and add the command
 echo '#!/bin/bash' > $file_name
 echo "$command_line" >> $file_name
@@ -16,7 +17,7 @@ echo "Your script is now created !"
 echo
 #we ask the user informations ahout the created script to document it in README.md
 echo "What will you script do ? (USE ONLY WHITESPACE AS A DELIMITER)"
-IFS= ; read -r -e -p "filename & Usage : " script_documentation
+read -r -e -p "filename & Usage : " script_documentation
 echo "$script_documentation" >> README.md
 echo
 echo "The README.md file has been updated !"
@@ -30,7 +31,7 @@ echo "let\'s add your work to your repositry"
 echo
 git add $file_name
 echo "what is your commit message ?"
-IFS= ;  read -r -e  -p "commit_message : " commit_message
+read -r -e  -p "commit_message : " commit_message
 git commit -m "$commit_message"
 git push
 echo
