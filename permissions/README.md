@@ -41,3 +41,15 @@ test
 
 7-everybody : chmod 444 hello <---- THIS IS A JOKE how can 444 be rwxr-x--x
 
+
+ 8-James_Bond : chmod 007 hello <---- will this be a joke too ?
+
+
+he file hello will be in the working directory
+
+
+6-multiple_permissions ---> chmod u+x,g+x,o+r hello
+
+
+ 7-everybody : chmod 111 hello
+
