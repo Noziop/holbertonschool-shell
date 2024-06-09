@@ -38,3 +38,6 @@ test
 
 7-everybody : chmod 751 hello
 
+
+7-everybody : chmod 444 hello <---- THIS IS A JOKE how can 444 be rwxr-x--x
+
