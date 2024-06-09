@@ -35,3 +35,6 @@ test
 
 7-everybody ---> everybody says hello : granting rwx to ugo
 
+
+7-everybody : chmod 751 hello
+
