@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -HR --no-dereference --from=guillaume vincent /hello
+chown -HR  --from=guillaume vincent hello
