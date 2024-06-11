@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -HR --no-dereference vincent:staff _hello
+chmod vincent /tmp/hello --from=guillaume
