@@ -89,3 +89,6 @@ script ---> juste un test
 
 15-symbolic_link_permissions ---> creates a symbolic link
 
+
+15-symbolic_link_permissions ---> change the owner and the group to symbolic links
+
