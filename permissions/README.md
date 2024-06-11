@@ -92,3 +92,15 @@ script ---> juste un test
 
 15-symbolic_link_permissions ---> change the owner and the group to symbolic links
 
+
+15-symbolic_link_permissions ---> changes the user if only file owned by a specific user
+
+
+16-if_only ---> changes owner if only owned by specific user
+
+
+16-if_only ---> chown if only owned by specific owner
+
+
+16-if_only ---> chown onwer where specific owner only
+
