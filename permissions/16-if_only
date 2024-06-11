@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -HR --no-dereference /tmp/hello --from=guillaume
+chown --no-dereference --rom=guillaume vincent /tmp/hello
