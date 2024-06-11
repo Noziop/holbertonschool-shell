@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -st /tmp hello
+ln -s hello _hello
