@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s hello /tmp/_hello
+chown vincent:staff _hello
