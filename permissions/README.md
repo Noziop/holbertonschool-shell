@@ -53,3 +53,27 @@ he file hello will be in the working directory
 
  7-everybody : chmod 111 hello
 
+
+script ---> juste un test
+
+
+11-directories_permissions ---> script that changes permission to ./ and all the subdir, but not files.
+
+
+12-directory_permissions ---> create a directory with specific permissions
+
+
+12-directory_permissions ---> creates a directory whit specific permissions - 751 in this case
+
+
+12-directory_permissions ---> creates a directory with specific permission
+
+
+12-directory_permissions ---> change the groupe owner for a file
+
+
+13-change_group ---> changes the  group for aa file
+
+
+13-change_group ---> changes the group owner for a file
+
