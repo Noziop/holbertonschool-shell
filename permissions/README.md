@@ -77,3 +77,15 @@ script ---> juste un test
 
 13-change_group ---> changes the group owner for a file
 
+
+14-change_owner_and_group ---> changes the owner and group recursivly for a dir
+
+
+14-change_owner_and_group ---> changes the owner and group recursivly for a dir
+
+
+15-symbolic_link_permissions ---> creates symbolic link for a file into another dir
+
+
+15-symbolic_link_permissions ---> creates a symbolic link
+
