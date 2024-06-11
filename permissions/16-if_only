@@ -1,2 +1,2 @@
 #!/bin/bash
-chown --no-dereference --rom=guillaume vincent /tmp/hello
+chown -HR --no-dereference --rom=guillaume vincent /tmp/hello
