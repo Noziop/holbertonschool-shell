@@ -10,3 +10,6 @@
 
 1-confused_smiley ---> escaping characters, should've try the output first, had to correct"
 
+
+6-third_line ---> print the 3rd line of a file
+
