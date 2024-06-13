@@ -61,3 +61,6 @@
 
 19-AZ ---> replace character with tr
 
+
+21-reverse ---> invert that input
+
