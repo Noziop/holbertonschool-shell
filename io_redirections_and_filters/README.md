@@ -19,3 +19,6 @@
 
 9-duplicate_last_line ---> takes "n" line and append it to the file
 
+
+10-no_more_js ---> delete files recursively without touching the dirs
+
