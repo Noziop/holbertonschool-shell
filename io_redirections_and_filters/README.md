@@ -13,3 +13,6 @@
 
 6-third_line ---> print the 3rd line of a file
 
+
+8-cwd_state ---> saves the content of a command to a file
+
