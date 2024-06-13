@@ -58,3 +58,6 @@
 
 20-hiago ---> trims a letter from input
 
+
+19-AZ ---> replace character with tr
+
