@@ -16,3 +16,6 @@
 
 8-cwd_state ---> saves the content of a command to a file
 
+
+9-duplicate_last_line ---> takes "n" line and append it to the file
+
