@@ -64,3 +64,6 @@
 
 21-reverse ---> invert that input
 
+
+22-users_and_homes ---> sort alphabetically the content of a file
+
