@@ -22,3 +22,6 @@
 
 10-no_more_js ---> delete files recursively without touching the dirs
 
+
+11-directories ---> counting the number of directories
+
