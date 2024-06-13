@@ -37,3 +37,24 @@
 
 13-unique ---> lists unique entries of a file
 
+
+14-findthatword ---> catching an expression into a file
+
+
+16-whatsnext ---> catch an expression into a file and print the 3 lines after
+
+
+17-hidethisword ---> show all lines that DO NOT CONTAIN a word
+
+
+18-letteronly ---> grep alpha only
+
+
+15-countthatword ---> counts the occurence of bin in a file
+
+
+20-hicago ---> trimmes a letter from the input
+
+
+20-hiago ---> trims a letter from input
+
