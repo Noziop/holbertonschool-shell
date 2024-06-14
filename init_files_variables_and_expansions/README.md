@@ -43,3 +43,9 @@
 
 12-combinations ---> prints all two possibilities with 2 letter except "oo"
 
+
+13-print_float ---> print float a number, to only 2 decimals
+
+
+14-decimal_to_hexadecimal ---> using prinf to do what i've already done with this method on exercise 11
+
