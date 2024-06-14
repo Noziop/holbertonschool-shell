@@ -28,3 +28,6 @@
 
 7-create_global_variable ---> creates a globale variable
 
+
+8-true_knowledge ---> makes an aaddition
+
