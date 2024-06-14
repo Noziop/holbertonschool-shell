@@ -37,3 +37,9 @@
 
 10-love_exponent_breath ---> exponent
 
+
+11-binary_to_decimal ---> converting bin to hex
+
+
+12-combinations ---> prints all two possibilities with 2 letter except "oo"
+
