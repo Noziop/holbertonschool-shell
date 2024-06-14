@@ -34,3 +34,6 @@
 
 9-Divide_and_rule ---> divides
 
+
+10-love_exponent_breath ---> exponent
+
