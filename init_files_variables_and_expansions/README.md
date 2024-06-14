@@ -31,3 +31,6 @@
 
 8-true_knowledge ---> makes an aaddition
 
+
+9-Divide_and_rule ---> divides
+
