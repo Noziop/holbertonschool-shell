@@ -38,7 +38,7 @@ echo "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo ":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
 echo ":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::";
 
-
+echo "Script by Fassih Belmokhtar - You can do what you want : feel free to fork !"
 
 
 # Storing the IFS default value before giving a specific value.
@@ -174,7 +174,7 @@ if [[ $filename =~ ^[a-zA-Z0-9_-]+$ ]]; then
     echo
     echo "Let's now add this script to your repository."
     echo
-    git add "$filename"
+    git add .
     echo "What is your commit message?"
     read -re -p "Commit message: " commit_message
     echo
@@ -192,9 +192,11 @@ if [[ $filename =~ ^[a-zA-Z0-9_-]+$ ]]; then
             read -re -p "this script will execute this : $command_line. Are you Sure ? Y or N ?" -n 1 are_you_sure
             if [[ $are_you_sure =~ ^[Yy]$ ]]; then
                 ./"$filename"
+		break
             elif [[ ! $are_you_sure =~ ^[Nn]$ ]]; then
-            echo
-            echo "either way you missclicked, or you didn't answer right"
+            	echo
+            	echo "either way you missclicked, or you didn't answer right"
+	    	break
             else
                 echo
                 echo "Ok this script hasn't been executed, be sure that won't mess with the result of your assignement."
@@ -203,7 +205,8 @@ if [[ $filename =~ ^[a-zA-Z0-9_-]+$ ]]; then
         done
     else
         echo
-        echo "Ok this script hasn't been executed, be sure that won't mess with the result of your assignement."    
+        echo "Ok this script hasn't been executed, be sure that won't mess with the result of your assignement."
+    	break	
     fi
     # Restoring the IFS value to its default
     IFS=$oldIFS
