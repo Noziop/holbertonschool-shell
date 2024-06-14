@@ -10,3 +10,21 @@
 
 3-paths ---> counts the entries in $PATH
 
+
+4-global_variables ---> print global variables
+
+
+5-local_variables ---> prints local variable
+
+
+5-local_variables ---> displays local variable
+
+
+6-create_local_variable ---> creates a local variable
+
+
+6-create_local_variable ---> creates a local variable
+
+
+7-create_global_variable ---> creates a globale variable
+
